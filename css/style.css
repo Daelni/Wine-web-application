@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #3c1053;
+ }
+
+ header{
+    width: 100%;
+ }
+
+ .header .main{
+    width: 90%;
+    margin: 0 auto;
+ }
+
+ .navbar{
+    margin-top: 30px;
+ }
+
+ .navbar .brand{
+    display: flex;
+    margin: 20px 70px;
+    color: #78a741;
+ }
+ .navbar .brand .wine-bottle{
+    font-size: 1.6em;
+ }
+ .navbar .brand .h3{
+    font-size: 1.3em;
+    margin: 5px 5px;
+ }
+ .menu ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: -50px 20px;
+ }
+ .menu ul li{
+    list-style: none;
+    margin-right: 70px;
+ }
+ .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+ }
+ .navbar .toggle-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+ }
+ .navbar .toggle-menu .ops{
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+ }
+
+ .container-info{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+ }
+
+ .container-info h1{
+    font-size: 5em;
+    font-family: "Permanent Marker", cursive;
+   }
+   
+ .container-info h2{
+    font-size: 2em;
+   }
+
+ .container-info .btn{
+   font-size: 1.5em;
+   width: 200px;
+   padding: 5px;
+   border-radius: 50px;
+   border: none;
+   background-color: #78a741;
+   color: #fff;
+ }
+
+ .container-info .img-content img{
+   max-width: 100%;
+ }
+   
+
+ .container-info .social-content li{
+   list-style: none;
+   margin: 20px;
+ }
+
+ .container-info .social-content i{
+   font-size: 1.3em;
+   cursor: pointer;
+ }
+
+
+ @media(max-width:570px){
+    .navbar .toggle-menu .ops {
+        display: block;
+        margin: -60px 30px;
+    }
+
+    .navbar .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: #3c1053;
+        position: fixed;
+        margin-top: 100px;
+        transform: translateX(-120%);
+        transition: 1s ease-in;
+    }
+
+    .navbar .menu .menu-on {
+        transform: translateX(-4%);
+    }
+    .navbar .menu ul li {
+        margin: 30px;
+        text-transform: uppercase;
+    }
+ }
